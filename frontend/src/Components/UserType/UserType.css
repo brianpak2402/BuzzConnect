@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Nunito:ital,wght@0,400;0,600;1,300&display=swap');
+
+.UserType {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 650px;
+    min-height: 671px;
+    max-height: 62vh;
+    padding: 30px 50px 30px 50px;
+    border-radius: 36px;
+    background: #F5F5F5;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px, rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
+}
+
+.UserType h1 {
+    font-size: 72px;
+    font-family: 'Nunito', sans-serif;
+    color: #003057;
+    text-align: left;
+    align-self: flex-start;
+}
+
+.UserType p {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 36px;
+    color: #9CA6C6;
+    text-align: left;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.UserType-btn {
+    height: 72px;
+    width: 550px;
+    border-radius: 45px;
+    background-color: #DCE2F5;
+    font-family: 'Nunito', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #003057;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.UserType-btn:hover {
+    background-color: #C8D0E9;
+}
+
+.UserType-btn:active {
+    background-color: #B7C1E1;
+}
+
+.user-type-icon {
+    text-align: left;
+    align-self: flex-start;
+}

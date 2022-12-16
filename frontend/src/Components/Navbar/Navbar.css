@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Nunito:ital,wght@0,400;0,600;1,300&display=swap');
+
+.Navbar {
+    width: 100vw;
+    height: 10%;
+    background-color: #003057;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.navbar-label {
+    color: white;
+    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    padding: 0 15px;
+    height: 100%;
+    width: auto;
+    margin: 10px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100%;
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-label:hover {
+    background-color: #396388;
+    color: white;
+}
+
+.navbar-label:active {
+    background-color: #6386a0;
+    color: white;
+}
+
+.Navbar h1 {
+    color: white;
+    font-size: 55px;
+    font-family: 'Arvo', serif;
+    justify-self: flex-start;
+    position: absolute;
+    left: 10px;
+}
+
+.Navbar .logo {
+    height: 100%;
+    width: 90px;
+}
+
+.Navbar .welcome {
+    color: white;
+    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    padding: 0 15px;
+    height: inherit;
+    width: auto;
+    margin: 0;
+    align-self: center;
+    line-height: 120px;
+}
+
+
+

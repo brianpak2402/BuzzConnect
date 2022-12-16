@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+:root {
+    --header-display: flex;
+    --header-flex-direction: row;
+    --header-justify-content: space-between;
+    --header-align-items: center;
+    --header-height: 90px;
+    --header-width: 100%;
+    --acc-padding: 20px;
+    --header-cursor: pointer;
+
+    --acc-font: Nunito, sans-serif;
+    --acc-font-size-lg: 30px;
+    --acc-font-size-md: 25px;
+    --acc-font-size-sm: 20px;
+    --acc-val-weight: 200;
+    --acc-bold: 600;
+    --acc-color: #003057;
+
+    --acc-border-rad: 50px;
+    --acc-btn-height: 44%;
+    --acc-btn-width: 100%;
+}
+
+.accordion-dropdown-closed {
+    display: var(--header-display);
+    flex-direction: var(--header-flex-direction);
+    justify-content: var(--header-justify-content);
+    align-items: var(--header-align-items);
+
+    height: var(--header-height);
+    width: var(--header-width);
+
+    border-bottom: 5px solid #DCE2F5;
+    padding: 0 var(--acc-padding);
+    cursor: var(--header-cursor);
+}
+
+.accordion-dropdown-open {
+    display: var(--header-display);
+    flex-direction: var(--header-flex-direction);
+    justify-content: var(--header-justify-content);
+    align-items: var(--header-align-items);
+
+    height: var(--header-height);
+    width: var(--header-width);
+
+    border: none;
+    padding: 0 var(--acc-padding);
+    cursor: var(--header-cursor);
+}
+
+.event-title {
+    font-family: var(--acc-font);
+    font-size: var(--acc-font-size-lg);
+    font-weight: var(--acc-bold);
+    color: var(--acc-color);
+
+}
+
+.header-right {
+    display: var(--header-display);
+    flex-direction: var(--header-flex-direction);
+    justify-content: var(--header-justify-content);
+    align-items: var(--header-align-items);
+    padding: var(--acc-padding);
+}
+
+.header-right > * {
+    margin: 0 10px;
+}
+
+.event-created-by {
+    font-family: var(--acc-font);
+    font-size: var(--acc-font-size-lg);
+    font-weight: var(--acc-val-weight);
+    color: var(--acc-color);
+}
+
+.acc-description {
+    width: 51%;
+    height: 200px;
+
+    border: 5px solid #DCE2F5;
+    box-shadow: inset 0px -70px 96px -58px rgba(220,226,245,0.56);
+    font-family: Nunito, sans-serif;
+    font-size: var(--acc-font-size-md);
+    font-weight: var(--acc-val-weight);
+    color: var(--acc-color);
+
+    overflow-y: auto;
+}
+
+.acc-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 200px;
+}
+
+.acc-row > * {
+    margin: 0 var(--acc-padding);
+}
+
+.acc-btn-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    height: 100%;
+    width: 33%;
+}
+
+.acc-btn-col > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.acc-attendees-btn {
+    display: flex !important;
+    flex-direction: row !important;
+    margin-bottom: var(--acc-padding);
+
+    font-family: var(--acc-font);
+    font-size: var(--acc-font-size-md);
+    font-weight: var(--acc-bold);
+    color: var(--acc-color);
+    cursor: pointer;
+}
+
+.acc-attendees-btn:hover {
+    color: #396388;
+}
+
+.acc-attendees-btn:active {
+    color: #6386a0;
+}
+
+.acc-rsvp-btn {
+    height: 44%;
+    width: 100%;
+    margin-bottom: var(--acc-padding);
+
+    font-family: var(--acc-font);
+    font-size: var(--acc-font-size-md);
+    font-weight: var(--acc-bold);
+    color: white;
+
+    border: none;
+    border-radius: var(--acc-border-rad);
+
+    background-color: #003057;
+}
+
+.acc-rsvp-btn:hover {
+    background-color: #396388;
+}
+
+.acc-rsvp-btn:active {
+    background-color: #6386a0;
+}
+
+.acc-edit-btn {
+    height: var(--acc-btn-height);
+    width: var(--acc-btn-width);
+    margin-bottom: var(--acc-padding);
+
+    font-family: var(--acc-font);
+    font-size: var(--acc-font-size-md);
+    font-weight: var(--acc-bold);
+    color: #003057;
+
+    border: none;
+    border-radius: var(--acc-border-rad);
+
+    background-color: #DCE2F5;
+}
+
+.acc-edit-btn:hover {
+    background-color: #C8D0E9;
+}
+
+.acc-edit-btn:active {
+    background-color: #B7C1E1;
+}
+
+.acc-remove-btn {
+    height: var(--acc-btn-height);
+    width: var(--acc-btn-width);
+    margin-bottom: var(--acc-padding);
+
+    font-family: var(--acc-font);
+    font-size: var(--acc-font-size-md);
+    font-weight: var(--acc-bold);
+    color: white;
+
+    border: none;
+    border-radius: var(--acc-border-rad);
+
+    background-color:#C12E2E;
+}
+
+.acc-remove-btn:hover {
+    background-color: #9d2727;
+}
+
+.acc-remove-btn:active {
+    background-color: #721c1c;
+}
+
+.acc-value {
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.acc-txt-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    height: 155px;
+    width: 100%;
+    margin: var(--acc-padding) var(--acc-padding) 0;
+
+    font-family: var(--acc-font);
+    font-size: var(--acc-font-size-md);
+    font-weight: var(--acc-val-weight);
+    color: var(--acc-color);
+
+    overflow: hidden;
+}

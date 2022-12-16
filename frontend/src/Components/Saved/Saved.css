@@ -1,0 +1,10 @@
+.flag {
+    background-color: rgb(178, 235, 179);
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    bottom: 10px;
+    z-index: 1;
+    left: 46vw;
+    width: 8vw;
+}

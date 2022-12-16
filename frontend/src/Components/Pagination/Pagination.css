@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Nunito:ital,wght@0,400;0,600;1,300&display=swap');
+
+.pagination {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 92%;
+    width: 62%;
+    background-color: white;
+    border: solid 6px #DCE2F5;
+}
+
+.pagination .events {
+    height: 714px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.pagination .nums {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 431px;
+    color: #003057;
+    font-size: 45px;
+    font-family: Nunito, sans-serif;
+}

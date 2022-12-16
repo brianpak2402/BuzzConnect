@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Nunito:ital,wght@0,400;0,600;1,300&display=swap');
+
+.create-account {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 650px;
+    min-height: 671px;
+    max-height: 62vh;
+    border-radius: 36px;
+    background: #F5F5F5;
+    padding: 30px 50px 80px 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px, rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
+}
+
+.create-account h1 {
+    font-size: 72px;
+    font-family: 'Nunito', sans-serif;
+    color: #003057;
+    align-self: flex-start;
+    margin-top: -30px;
+}
+
+.create-account p {
+    font-size: 27px;
+    font-family: 'Nunito', sans-serif;
+    color: #9CA6C6;
+    text-align: left;
+    align-self: flex-start;
+    margin-top: -50px;
+    margin-left: 5px;
+}
+
+.create-account .icon {
+    text-align: left;
+    align-self: flex-start;
+}
+
+.create-account .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.create-account .textIn {
+    height: 75px;
+    width: 500px;
+    border-radius: 100px;
+    padding: 20px;
+    border-style: solid;
+    border-color: #DCE2F5;
+    border-width: 3px;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    background-color: #F5F5F5;
+}
+
+.create-account .submit {
+    height: 70px;
+    width: 200px;
+    border-radius: 45px;
+    background-color: #003057;
+    font-family: 'Nunito', sans-serif;
+    font-size: 36px;
+    font-weight: 100;
+    color: #F5F5F5;
+    border: none;
+}
+
+.create-account .submit:hover {
+    background-color: #396388;
+}
+
+.create-account .submit:active {
+    background-color: #6386a0;
+}

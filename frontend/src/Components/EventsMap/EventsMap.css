@@ -1,0 +1,35 @@
+.map-header {
+  font-family: 'Nunito', sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  color: #003057;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.map-yllw-line {
+  height: 0;
+  width: 100%;
+  border-bottom: solid 5px #D3A600;
+}
+
+.mapbox {
+  height : 75vh;
+  width: 75vw;
+}
+
+.pin {
+  display: flex;
+  align-items: center;
+}
+
+.pin-icon {
+  transform: translate(-9px, -32px);
+  cursor: pointer;
+  font-size: 2rem;
+  color: #c54848;
+}
