@@ -10,9 +10,7 @@ An in-depth paragraph about your project and overview of use.
 ## Getting Started
 
 ### Dependencies
-
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+Before running this program, make sure that your device is running Java
 
 ### Installing
 From the command line, clone this repository and enter the following commands.
@@ -29,15 +27,9 @@ $ cd BuzzConnect
 enter code here.
 ```
 
-
 ## Contributors 
 Brian Pak - [@brianpak2402](https://github.com/brianpak2402) <br/>
 Christian Lee - [@clee821](https://github.gatech.edu/clee821) <br/>
 Lillian Stubbs <br/>
 Alex Soong - [@asoong3](https://github.gatech.edu/asoong3) <br/>
 Max Zhao <br/>
-
-## Version History
-
-* sprint1
-    * Initial Release
