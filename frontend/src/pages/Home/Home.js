@@ -1,17 +1,14 @@
 import React, { useState, useEffect } from 'react'
-import Pagination from '../Pagination/Pagination';
-import {Link} from "react-router-dom";
-import Navbar from "../Navbar/Navbar"
-import FilterEvent from "../Filter/FilterEvent";
+import Pagination from '../../components/Pagination/Pagination';
+import Navbar from "../../components/Navbar/Navbar"
+import FilterEvent from "../../components/Filter/FilterEvent";
 
-import { getAllEventsForUser, setInvitees} from '../../services/EventService'
-import { getMapData } from '../../services/LocationService';
+import { getAllEventsForUser } from '../../services/EventService'
 import { listEventsToAttend } from '../../services/AttendeeService';
 
 import './Home.css'
 
 export default function Home() {
-  
     var [ events, setEvents ] = useState();
     //var [ mapData, setMapData ] = useState();
     const [attendingEvents, setAttendingEvents] = useState([])
@@ -25,9 +22,6 @@ export default function Home() {
 
     useEffect(() => {
         const userId = window.sessionStorage.getItem("userId");
-        // set invitee usernames to pass in to setInvitees
-        // const inviteeUsernames = ["imanattendee", "alexcsoong"];
-        // setInvitees(eventId, inviteeUsernames);
 
         if (userId !== null) {
             getAllEventsForUser(userId)

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import CreatePopup from "../CreatePopup"
-import Navbar from "../Navbar/Navbar"
+import CreatePopup from "../../components/CreatePopup"
+import Navbar from "../../components/Navbar/Navbar"
 
 import "./MyEventsHost.css";
 

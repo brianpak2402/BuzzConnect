@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Map, {Marker, Popup} from 'react-map-gl';
+import Navbar from '../../components/Navbar/Navbar';
 import { FaMapPin } from 'react-icons/fa'
-import Navbar from '../Navbar/Navbar';
-
 import { getAllEventsForUser } from '../../services/EventService'
-
 import 'mapbox-gl/dist/mapbox-gl.css';
 import './EventsMap.css'
 
@@ -44,14 +42,11 @@ export default function EventsMap() {
                         const hostChoice = window.sessionStorage.getItem("hostChoice");
                         const dateChoice = window.sessionStorage.getItem("dateChoice");
                         const locChoice = window.sessionStorage.getItem("locChoice");
-                        console.log("hostChoice",hostChoice)
-                        console.log("dateChoice",dateChoice)
-                        console.log("locChoice",locChoice)
 
-                        let date = event.dateTime.slice(0, 10);
-                        let time = event.dateTime.slice(10);
-                        let host = event.hostName;
-                        let loc = event.location.name;
+                        const date = event.dateTime.slice(0, 10);
+                        const time = event.dateTime.slice(10);
+                        const host = event.hostName;
+                        const loc = event.location.name;
 
                         // no filters
                         if (hostChoice === "null" && dateChoice === "null" && locChoice === "null") {
@@ -91,7 +86,7 @@ export default function EventsMap() {
                         } 
                         // only host filter
                         else if (hostChoice != null && dateChoice === "null" && locChoice === "null") {
-                            if (hostChoice != null && hostChoice.localeCompare(host) == 0) {
+                            if (hostChoice != null && hostChoice.localeCompare(host) === 0) {
                                 return (<div key={event.id}>
                                 <Marker 
                                 longitude={event.location.longitude} 
@@ -129,7 +124,7 @@ export default function EventsMap() {
                         } 
                         // only date filter
                         else if (hostChoice === "null" && dateChoice != null && locChoice === "null") {
-                            if (dateChoice != null && dateChoice.localeCompare(date) == 0) {
+                            if (dateChoice != null && dateChoice.localeCompare(date) === 0) {
                                 return (<div key={event.id}>
                                 <Marker 
                                 longitude={event.location.longitude} 
@@ -167,7 +162,7 @@ export default function EventsMap() {
                         }
                         // only loc filter
                         else if (hostChoice === "null" && dateChoice === "null" && locChoice != null) {
-                            if (locChoice != null && locChoice.localeCompare(loc) == 0) {
+                            if (locChoice != null && locChoice.localeCompare(loc) === 0) {
                                 return (<div key={event.id}>
                                 <Marker 
                                 longitude={event.location.longitude} 
@@ -205,7 +200,7 @@ export default function EventsMap() {
                         }
                         // host and date filter
                         else if (hostChoice != null && dateChoice != null && locChoice === "null") {
-                            if (hostChoice.localeCompare(host) == 0 && dateChoice.localeCompare(date) == 0) {
+                            if (hostChoice.localeCompare(host) === 0 && dateChoice.localeCompare(date) === 0) {
                                 return (<div key={event.id}>
                                 <Marker 
                                 longitude={event.location.longitude} 
@@ -243,7 +238,7 @@ export default function EventsMap() {
                         }
                         // host and loc filter
                         else if (hostChoice != null && dateChoice === "null" && locChoice != null) {
-                            if (hostChoice.localeCompare(host) == 0 && locChoice.localeCompare(loc) == 0) {
+                            if (hostChoice.localeCompare(host) === 0 && locChoice.localeCompare(loc) === 0) {
                                 return (<div key={event.id}>
                                 <Marker 
                                 longitude={event.location.longitude} 
@@ -281,7 +276,7 @@ export default function EventsMap() {
                         }
                         // date and loc filter
                         else if (hostChoice === "null" && dateChoice != null && locChoice != null) {
-                            if (dateChoice.localeCompare(date) == 0 && locChoice.localeCompare(loc) == 0) {
+                            if (dateChoice.localeCompare(date) === 0 && locChoice.localeCompare(loc) === 0) {
                                 return (<div key={event.id}>
                                 <Marker 
                                 longitude={event.location.longitude} 
@@ -319,7 +314,7 @@ export default function EventsMap() {
                         }
                         // all filters
                         else if (hostChoice != null && dateChoice != null && locChoice != null) {
-                            if (hostChoice.localeCompare(host) == 0 && dateChoice.localeCompare(date) == 0 && locChoice.localeCompare(loc) == 0) {
+                            if (hostChoice.localeCompare(host) === 0 && dateChoice.localeCompare(date) === 0 && locChoice.localeCompare(loc) === 0) {
                                 return (<div key={event.id}>
                                 <Marker 
                                 longitude={event.location.longitude} 
@@ -355,7 +350,7 @@ export default function EventsMap() {
                                 </div>)
                             }
                         }
-                        })
+                    })
                 }
                 </Map>
             </div>

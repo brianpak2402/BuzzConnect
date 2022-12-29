@@ -13,16 +13,18 @@
     font-family: 'Nunito', sans-serif;
     font-size: 65px;
     color: #003057;
+    flex: 1;
 }
 
 .my-events .yellow-line {
-    height: 0;
     width: 1100px;
     border-bottom: Solid 6px #D3A600;
+    margin-right: 5rem;
+    flex: 2;
 }
 
 .my-events .header-row {
-    width: 1420px;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

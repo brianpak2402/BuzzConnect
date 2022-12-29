@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
-import {Link} from "react-router-dom";
-import Navbar from "../Navbar/Navbar";
-import AccordionDropdown from '../AccordionDropdown/AccordionDropdown'
+import Navbar from "../../components/Navbar/Navbar";
+import AccordionDropdown from '../../components/AccordionDropdown/AccordionDropdown'
+import RSVPPopup from "../../components/RSVPPopup/RSVPPopup";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCaretLeft, faUser } from '@fortawesome/free-solid-svg-icons'
-import AttendeesPopup from "../AttendeesPopup/AttendeesPopup";
-import RSVPPopup from "../RSVPPopup/RSVPPopup";
+import { faCaretLeft, } from '@fortawesome/free-solid-svg-icons'
 
 import {listEventsToAttend} from '../../services/AttendeeService';
 import { getEventsInvitedTo } from '../../services/AttendeeService';
@@ -133,7 +131,7 @@ export default function MyEventsAttendee() {
                             </div>
                         </div>
                         <div className="conflict-area">
-                            {timeConflicts.length != 0 && <h3> <FontAwesomeIcon icon={faCaretLeft}/> Time Conflicts</h3>}
+                            {timeConflicts.length !== 0 && <h3> <FontAwesomeIcon icon={faCaretLeft}/> Time Conflicts</h3>}
                             <div className="conflicts">
                                 {formatConflicts}
                             </div>

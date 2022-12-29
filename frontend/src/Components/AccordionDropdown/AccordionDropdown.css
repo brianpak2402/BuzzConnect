@@ -23,11 +23,11 @@
 }
 
 .accordion-header-closed span {
-    flex-grow: 1;
+    flex-grow: 2;
 }
 
 .accordion-header-closed .title{
-    flex-grow: 2;
+    flex-grow: 1;
     text-align: start;
 }
 
