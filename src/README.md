@@ -69,3 +69,7 @@ $ curl localhost:8080/buzzconnect/host/login -d username=gburdell2022 -d passwor
 | `/locations/create` | POST | creates a location with the given attributes|
 | `/locations/:locationId/addEvent` | POST | creates an association between the given location and event |
 | `/locations/search` | GET | gets all locations sharing the name provided in the query|
+
+## Contributors 
+Brian Pak - [@brianpak2402](https://github.com/brianpak2402) <br/>
+Max Zhao <br/>
